@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link href="stylesheet_registration_doctors.css" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Raleway" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <p class="nav_item"><a href="index.html">TickDoc Home</a></p>
+    <p class="nav_item"><a href="appointment_site.html">Appointment</a></p>
+    <p class="nav_item"><a href="appointment_management_patients.html">Appointment Management</a></p>
+    <p class="nav_item"><a href="appointment_schedule_management.html">Schedule Management</a></p>
+    <p class="nav_item"><a href="registration.html">Registration</a></p>
+    <p class="nav_item"><a href="login.html">Log In</a></p>
+  </nav>
+
+  <main class="mainForm">
+    <div class="registration">
+      <h1>Registration Doctor</h1>
+      <form action="/action_page.php" method="get" id="form1">
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="firstName" class="labels">First Name</label><br>
+            <input id="firstName" type="text"><br>
+            <div class="error" id="firstNameError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="lastName">Last Name</label><br>
+            <input id="lastName" type="text"><br>
+            <div class="error" id="lastNameError"></div>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="email">Email</label><br>
+            <input id="email" type="email"><br>
+            <div class="error" id="emailError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="phone_number">Phone Number</label><br>
+            <input id="phone_number" type="tel" placeholder="123-45-678" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"><br>
+            <div class="error" id="phone_numberError"></div>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="birthday">Birthday</label><br>
+            <input id="birthday" type="date"><br>
+            <div class="error" id="birthdayError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="gender">Gender</label><br>
+            <select id="gender" type="text"><br>
+              <option>--Please choose an option--</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>No binario</option>
+              <option>Prefer no to say</option>
+            </select>
+            <div class="error" id="genderError"></div>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <!-- <div class="form_class">
+            <label for="medical_area">Medical area</label><br>
+            <select id="medical_area" type="text" multiple><br>
+              <option>--Please choose an option--</option>
+              <option>Age care</option>
+              <option>Children’s Health</option>
+              <option>General healt</option>
+              <option>Men’s Health</option>
+              <option>Women’s Health</option>
+              <option>Mental Health</option>
+              <option>Travel Medicine</option>
+              <option>Other</option>
+            </select>
+            <div class="error" id="medical_areaError"></div>
+          </div> -->
+
+          <div class="form_class">
+            <label for="medical_area">Medical area</label><br>
+            <div id="medical_area" class="checkbox_group"><br>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="Age care" class="checkbox_group_input">
+                <label class="checkbox_group_label">Age care</label>
+              </div>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="Children’s Health" class="checkbox_group_input">
+                <label class="checkbox_group_label">Children’s Health</label>
+              </div>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="General healt" class="checkbox_group_input">
+                <label class="checkbox_group_label">General healt</label>
+              </div>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="Men’s Health" class="checkbox_group_input">
+                <label class="checkbox_group_label">Men’s Health</label>
+              </div>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="Women’s Health" class="checkbox_group_input">
+                <label class="checkbox_group_label">Women’s Health</label>
+              </div>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="Mental Health" class="checkbox_group_input">
+                <label class="checkbox_group_label">Mental Health</label>
+              </div>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="Travel Medicine" class="checkbox_group_input">
+                <label class="checkbox_group_label">Travel Medicine</label>
+              </div>
+              <div class="checkbox_group_div">
+                <input type="checkbox" name="medical_area" value="Other" class="checkbox_group_input">
+                <label class="checkbox_group_label">Other</label>
+              </div>
+            </div>
+            <div class="error" id="medical_areaError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="qualification">Qualification</label><br>
+            <select id="qualification" type="text"><br>
+              <option>--Please choose an option--</option>
+              <option>FRACGP</option>
+              <option>FRACP</option>
+              <option>FRCP</option>
+              <option>MBBS</option>
+              <option>MBChB</option>
+              <option>MRCP (UK)</option>
+              <option>FACRRM</option>
+              <option>Other</option>
+            </select>
+            <div class="error" id="qualificationError"></div>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="password">Password</label><br>
+            <input id="password" type="password"><br>
+            <div class="error" id="passwordError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="confirmPassword">Confirm Password</label><br>
+            <input id="confirmPassword" type="password"><br>
+            <div class="error" id="confirmPasswordError"></div>
+          </div>
+        </div>
+
+        <div class="form_class">
+          <div class="checkboxInput">
+            <input id="checkbox" type="checkbox" class="inputInLine">
+            <label for="checkbox" class="checkboxInLine">I agree to the terms and conditions</label><br>
+            <div class="error" id="checkboxError"></div>
+          </div>
+        </div>
+
+        <div class="buttonSection">
+          <label for="submit"></label>
+          <button id="submit" type="submit" class="submitButton" form="form1" value="Submit">Submit</button>
+
+          <label for="cancel"></label>
+          <button id="cancel" type="reset" class="cancelButton">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/registration doctor validations.js"></script>
+
+</body>
+
+</html>

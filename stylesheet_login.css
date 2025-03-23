@@ -1,0 +1,317 @@
+/* CSS Tools: Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -----------Our CSS style-----------*/
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    background-color: hsl(230, 28%, 13%);
+}
+
+nav p {
+    margin-bottom: 20px;
+}
+
+nav p:hover {
+    color: rgb(178, 220, 255);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.forgot_password {
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 96px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: white;
+    font-weight: 400;
+}
+
+
+.registration {
+    background-color: hsl(219, 30%, 18%);
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.checkboxInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkboxInLine {
+    padding-top: 4px;
+}
+
+.inputInLine {
+    width: auto;
+}
+
+.buttonSection {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+}
+
+.submitButton {
+    background-color: #008CBA;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 15px;
+}
+
+.cancelButton {
+    background-color: white;
+    color: black;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+@media (min-width: 850px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        font-weight: 400;
+    }
+
+}
+
+@media (max-width: 850px) and (min-width: 576px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    nav p {
+        width: 16.66%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        font-weight: 400;
+    }
+
+    
+}

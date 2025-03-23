@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link href="stylesheet_registration_patients.css" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Raleway" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <p class="nav_item"><a href="index.html">TickDoc Home</a></p>
+    <p class="nav_item"><a href="appointment_site.html">Appointment</a></p>
+    <p class="nav_item"><a href="appointment_management_patients.html">Appointment Management</a></p>
+    <p class="nav_item"><a href="appointment_schedule_management.html">Schedule Management</a></p>
+    <p class="nav_item"><a href="registration.html">Registration</a></p>
+    <p class="nav_item"><a href="login.html">Log In</a></p>
+  </nav>
+
+  <main class="mainForm">
+    <div class="registration">
+      <h1>Registration Patient</h1>
+      <form action="/action_page.php" method="get" id="form1">
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="firstName" class="labels">First Name</label><br>
+            <input id="firstName" type="text"><br>
+            <div class="error" id="firstNameError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="lastName">Last Name</label><br>
+            <input id="lastName" type="text"><br>
+            <div class="error" id="lastNameError"></div>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="email">Email</label><br>
+            <input id="email" type="email"><br>
+            <div class="error" id="emailError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="phone_number">Phone Number</label><br>
+            <input id="phone_number" type="tel" placeholder="123-445-678" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"><br>
+            <div class="error" id="phone_numberError"></div>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="birthday">Birthday</label><br>
+            <input id="birthday" type="date"><br>
+            <div class="error" id="birthdayError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="insurance">Insurance</label><br>
+            <select id="insurance" type="text"><br>
+              <option>--Please choose an option--</option>
+              <option>Australian Unity</option>
+              <option>Bupa</option>
+              <option>CDH Benefit</option>
+              <option>Defence Health</option>
+              <option>Health Care Insurance</option>
+              <option>Medibank</option>
+              <option>Navy Health</option>
+              <option>Qantas</option>
+              <option>Other</option>
+            </select>
+            <div class="error" id="insuranceError"></div>
+          </div>
+        </div>
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="password">Password</label><br>
+            <input id="password" type="password"><br>
+            <div class="error" id="passwordError"></div>
+          </div>
+
+          <div class="form_class">
+            <label for="confirmPassword">Confirm Password</label><br>
+            <input id="confirmPassword" type="password"><br>
+            <div class="error" id="confirmPasswordError"></div>
+          </div>
+        </div>
+
+        <div class="form_class">
+          <div class="checkboxInput">
+            <input id="checkbox" type="checkbox" class="inputInLine">
+            <label for="checkbox" class="checkboxInLine">I agree to the terms and conditions</label><br>
+            <div class="error" id="checkboxError"></div>
+          </div>
+        </div>
+
+        <div class="buttonSection">
+          <label for="submit"></label>
+          <button id="submit" type="submit" class="submitButton" form="form1" value="Submit">Submit</button>
+
+          <label for="cancel"></label>
+          <button id="cancel" type="reset" class="cancelButton">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/registration patient validations.js"></script>
+
+</body>
+
+</html>

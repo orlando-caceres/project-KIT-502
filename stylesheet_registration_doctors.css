@@ -1,0 +1,472 @@
+/* CSS Tools: Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -----------Our CSS style-----------*/
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    background-color: hsl(230, 28%, 13%);
+}
+
+nav p {
+    margin-bottom: 20px;
+}
+
+nav p:hover {
+    color: rgb(178, 220, 255);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo {
+    width: 96px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    color: white;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.registration {
+    background-color: hsl(219, 30%, 18%);
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form_class {
+    margin-bottom: 30px;
+}
+
+select {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.checkboxInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkboxInLine {
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.inputInLine {
+    width: auto;
+}
+
+.buttonSection {
+    margin-top: 10px;
+}
+
+.submitButton {
+    background-color: #008CBA;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.cancelButton {
+    background-color: white;
+    color: black;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.error {
+    color: rgb(219, 86, 88);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.checkbox_group_div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.checkbox_group_label {
+    width: 95%;
+}
+
+
+@media (max-width: 850px) and (min-width: 576px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    nav p {
+        width: 16.66%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 60px);
+        color: white;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding-left: 0px;
+    }
+
+    .form_class_main {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+
+    .registration {
+        width: 80%;
+        max-width: 600px;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: left;
+    }
+
+    input {
+        width: 100%;
+
+        margin-top: 5px;
+    }
+
+    .form_class {
+        width: 100%;
+
+    }
+
+    .form_class:nth-of-type(1) {
+        margin-right: 40px;
+    }
+
+    .buttonSection {
+        width: 100%;
+    }
+
+
+    .checkboxInput {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .inputInLine {
+        margin: 0px;
+    }
+
+    button {
+        margin-right: 15px;
+    }
+
+    .buttonSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #checkboxError {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 850px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 60px);
+        color: white;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding-left: 0px;
+    }
+
+    .form_class_main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+
+    .registration {
+        width: 80%;
+        max-width: 600px;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: left;
+    }
+
+    input,
+    select {
+        width: 100%;
+
+        margin-top: 5px;
+    }
+
+    .form_class {
+        width: 100%;
+
+    }
+
+    .form_class:nth-of-type(1) {
+        margin-right: 40px;
+    }
+
+    .buttonSection {
+        width: 100%;
+    }
+
+
+    .checkboxInput {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .inputInLine {
+        margin: 0px;
+    }
+
+    button {
+        margin-right: 15px;
+    }
+
+    .buttonSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #checkboxError {
+        margin-left: 10px;
+    }
+}

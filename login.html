@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Login</title>
+  <link href="stylesheet_login.css" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Raleway" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <p class="nav_item"><a href="index.html">TickDoc Home</a></p>
+    <p class="nav_item"><a href="appointment_site.html">Appointment</a></p>
+    <p class="nav_item"><a href="appointment_management_patients.html">Appointment Management</a></p>
+    <p class="nav_item"><a href="appointment_schedule_management.html">Schedule Management</a></p>
+    <p class="nav_item"><a href="registration.html">Registration</a></p>
+    <p class="nav_item"><a href="login.html">Log In</a></p>
+  </nav>
+
+  <main class="mainForm">
+    <div class="registration">
+
+      <h1>Welcome!</h1>
+      <form action="/action_page.php" method="get" id="form1">
+
+
+        <div class="form_class_main">
+          <div class="form_class">
+            <label for="email">Email</label><br>
+            <input id="email" type="email" required><br>
+          </div>
+
+
+          <div class="form_class">
+            <label for="password">Password</label><br>
+            <input id="password" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+          </div>
+        </div>
+
+
+        <div class="form_class">
+          <div class="checkboxInput">
+            <input id="checkbox" type="checkbox" required class="inputInLine">
+            <label for="checkbox" class="checkboxInLine">Remember me</label><br>
+          </div>
+        </div>
+        
+
+        <div class="buttonSection">
+          <label for="submit"></label>
+          <button id="submit" type="submit" class="submitButton" form="form1" value="Submit">Submit</button>
+
+          <label for="cancel"></label>
+          <button id="cancel" type="reset" class="cancelButton">Cancel</button>
+        </div>
+
+        <div class="form_class">
+          <p><a href="#" class="forgot_password">Forgot your password?</a></p>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+
+
+
+
+</body>
+
+</html>

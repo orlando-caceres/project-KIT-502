@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Appointment Schedule Management</title>
+  <link href="stylesheet_appointment_schedule_management.css" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Raleway" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <p class="nav_item"><a href="index.html">TickDoc Home</a></p>
+    <p class="nav_item"><a href="appointment_site.html">Appointment</a></p>
+    <p class="nav_item"><a href="appointment_management_patients.html">Appointment Management</a></p>
+    <p class="nav_item"><a href="appointment_schedule_management.html">Schedule Management</a></p>
+    <p class="nav_item"><a href="registration.html">Registration</a></p>
+    <p class="nav_item"><a href="login.html">Log In</a></p>
+  </nav>
+
+  <main class="mainForm">
+    <div class="your_schedule">
+      <h1>Your Schedule</h1>
+
+      <div class="upcoming_appointments">
+        <h2 class="header_appointment">Upcoming Appointments</h2>
+        <div style="overflow-x:auto;">
+          <table class="table_appointment">
+            <tr class="header_table">
+              <th>Date</th>
+              <th>Time</th>
+              <th>Patient Name</th>
+              <th>Note</th>
+            </tr>
+            <tr>
+              <td>24/03/2025</td>
+              <td>12:00-12:30</td>
+              <td>John Doe</td>
+              <td>Blood test required, allergy to steroid</td>
+            </tr>
+            <tr>
+              <td>12/04/2025</td>
+              <td>8:00-8:30</td>
+              <td>Mark Smith</td>
+              <td>Astma</td>
+            </tr>
+            <tr>
+              <td>28/04/2025</td>
+              <td>1:00-1:30</td>
+              <td>Mary Jane</td>
+              <td>Severe headache</td>
+            </tr>
+            <tr>
+              <td>03/05/2025</td>
+              <td>10:00-10:30</td>
+              <td>Jeny Will</td>
+              <td>Hair loss</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="mark_time_as_unavailables_section">
+
+        <div class="mark_time_as_unavailables">
+          <h2 class="header_appointment">Mark Time as Unavailable</h2>
+          <form action="/action_page.php" method="get" id="form1">
+            <div class="form_class_main">
+              <div class="form_class">
+                <label for="date" class="labels">Date:</label><br>
+                <input id="date" type="date" required><br>
+              </div>
+
+              <div class="form_class">
+                <label for="start_time">Start Time:</label><br>
+                <input id="start_time" type="time" required><br>
+              </div>
+
+              <div class="form_class">
+                <label for="end_time">End Time:</label><br>
+                <input id="end_time" type="time" required><br>
+              </div>
+            </div>
+
+            <div class="buttonSection">
+              <label for="submit"></label>
+              <button id="submit" type="submit" class="mark_as_unavailable_button" form="form1" value="Submit">Mark as
+                Unavailable</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="unavailable_slots">
+          <h2 class="header_appointment">Unavailable Slots</h2>
+          <div style="overflow-x:auto;">
+            <table class="table_appointment">
+              <tr class="header_table">
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Button Space</th>
+              </tr>
+              <tr>
+                <td>01-04-2025</td>
+                <td>13:00</td>
+                <td>14:00</td>
+                <td>
+                  <button type="submit" class="delete_button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>05-04-2025</td>
+                <td>10:00</td>
+                <td>12:00</td>
+                <td>
+                  <button type="submit" class="delete_button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>13-04-2025</td>
+                <td>8:00</td>
+                <td>10:00</td>
+                <td>
+                  <button type="submit" class="delete_button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>24-04-2025</td>
+                <td>14:00</td>
+                <td>14:30</td>
+                <td>
+                  <button type="submit" class="delete_button">Delete</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
