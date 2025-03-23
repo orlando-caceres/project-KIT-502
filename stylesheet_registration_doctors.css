@@ -274,6 +274,7 @@ select {
     flex-direction: row-reverse;
     align-items: baseline;
     margin-bottom: 5px;
+   justify-content: flex-start;
 }
 
 .checkbox_group_label {
